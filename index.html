@@ -1,39 +1,43 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dejá de Scrollear</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <canvas id="stars"></canvas>
-
-  <div class="container">
-    <h1>¿Estás scrolleando sin sentido?</h1>
-    <button id="boton">Dejar de scrollear</button>
-
-    <div id="ideas" class="hidden">
-      <ul>
-        <li>📖 Leé 10 páginas de un libro</li>
-        <li>🧘 Hacé una mini meditación de 5 minutos</li>
-        <li>✍️ Escribí lo mejor de tu día en una hoja</li>
-        <li>🚶 Salí a caminar 10 minutos</li>
-        <li>🎧 Escuchá música que te relaje</li>
-        <li>📞 Llamá o mandá un audio a un amigo</li>
-        <li>📷 Sacá una foto creativa con el celu</li>
-        <li>💧 Tomá un vaso de agua y estirá el cuerpo</li>
-        <li>🧩 Hacé algo con tus manos: dibujo, origami, lo que sea</li>
-        <li>🌟 Mirá el cielo y contá las estrellas</li>
-      </ul>
-    </div>
+<div id="ideas" class="hidden">
+  <div class="idea-box">
+    <button class="idea-title">📖 Leé 10 páginas de un libro</button>
+    <div class="idea-desc">Elegí un libro al azar o releé uno que te gustó. Apagá el celu 10 minutos.</div>
   </div>
+  <div class="idea-box">
+    <button class="idea-title">🧘 Hacé una mini meditación</button>
+    <div class="idea-desc">Poné un temporizador de 5 minutos, sentate cómodo y enfocá la respiración.</div>
+  </div>
+  <div class="idea-box">
+    <button class="idea-title">✍️ Escribí lo mejor de tu día</button>
+    <div class="idea-desc">Aunque parezca tonto, escribir lo bueno te cambia el humor.</div>
+  </div>
+  <div class="idea-box">
+    <button class="idea-title">🚶 Caminá 10 minutos</button>
+    <div class="idea-desc">Aunque sea hasta la esquina y volver. Mirá el mundo real.</div>
+  </div>
+  <div class="idea-box">
+    <button class="idea-title">🎧 Escuchá música que te relaje</button>
+    <div class="idea-desc">Elegí un tema que te conecte, sin mirar la pantalla.</div>
+  </div>
+  <div class="idea-box">
+    <button class="idea-title">📞 Mandale un audio a alguien</button>
+    <div class="idea-desc">Saludá a un amigo o familiar. Un mensajito puede alegrar el día.</div>
+  </div>
+  <div class="idea-box">
+    <button class="idea-title">📷 Sacá una foto creativa</button>
+    <div class="idea-desc">No para subir, sino para vos. Enfocate en luces, ángulos o detalles.</div>
+  </div>
+  <div class="idea-box">
+    <button class="idea-title">💧 Tomá agua y estirá el cuerpo</button>
+    <div class="idea-desc">Hidratate y movete un poco. Tu cuerpo lo va a agradecer.</div>
+  </div>
+  <div class="idea-box">
+    <button class="idea-title">🧩 Hacé algo con tus manos</button>
+    <div class="idea-desc">Puede ser dibujar, hacer origami, escribir o armar algo.</div>
+  </div>
+  <div class="idea-box">
+    <button class="idea-title">🌟 Contá estrellas</button>
+    <div class="idea-desc">Salí un ratito al patio o a la ventana y mirá el cielo de verdad.</div>
+  </div>
+</div>
 
-  <script src="stars.js"></script>
-  <script>
-    document.getElementById('boton').addEventListener('click', () => {
-      document.getElementById('ideas').classList.remove('hidden');
-    });
-  </script>
-</body>
-</html>
